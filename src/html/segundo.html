@@ -1,0 +1,73 @@
+<style>
+    .itemCheckbox {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #DBD0F3;
+        font-size: 1.2em;
+    }
+
+    .label {
+        width: 25px;
+        height: 25px;
+        background-color: #5B5670;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lista {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 0;
+    }
+
+    @media (min-width: 980px) {
+        .lista {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+</style>
+
+<div class="segundo">
+    <div class="titulo">
+        <h2 class="h2">Let's Review Your Activity</h2>
+    </div>
+    <div class="conteudoCorpo">
+        <p>Please check the following boxes below corresponding to your wallet and social activity in the Pyth
+            ecosystem.</p>
+
+        <p>I am active on…</p>
+
+        <ul class="lista d-grid ">
+            <li class="itemCheckbox m-1 "><label class="label" for=""><input style="display: none;" type="checkbox"
+                        name="" id=""></label>Solana</li>
+            <li class="itemCheckbox m-1 "><label class="label" for=""><input style="display: none;" type="checkbox"
+                        name="" id=""></label>Injective</li>
+            <li class="itemCheckbox m-1 "><label class="label" for=""><input style="display: none;" type="checkbox"
+                        name="" id=""></label>EVM</li>
+            <li class="itemCheckbox m-1 "><label class="label" for=""><input style="display: none;" type="checkbox"
+                        name="" id=""></label>Osmosis</li>
+            <li class="itemCheckbox m-1 "><label class="label" for=""><input style="display: none;" type="checkbox"
+                        name="" id=""></label>Aptos</li>
+            <li class="itemCheckbox m-1 "><label class="label" for=""><input style="display: none;" type="checkbox"
+                        name="" id=""></label>Neutron</li>
+            <li class="itemCheckbox m-1 "><label class="label" for=""><input style="display: none;" type="checkbox"
+                        name="" id=""></label>Sui</li>
+            <li class="itemCheckbox m-1 "><label class="label" for=""><input style="display: none;" type="checkbox"
+                        name="" id=""></label>Sei</li>
+        </ul>
+
+        <p>I am an active member of…</p>
+
+        <div class="itemCheckbox m-1 "><label class="label" for=""><input style="display: none;" type="checkbox" name=""
+                    id=""></label>Pyth Discord</div>
+
+        <div class="botoes">
+            <button class="botaoVoltar" onclick="carregarPaginaVoltar()"><- Back </button>
+            <button class="botao">Proceed -></button>
+        </div>
+    </div>
+</div>
+
+<script src="../js/segundo.js"></script>
