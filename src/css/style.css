@@ -1,5 +1,7 @@
 body {
-    background-image: url(../img/vetor-de-fundo-de-meio-tom-roxo-e-rosa_53876-67278.avif);
+    /* background-image: url(../img/vetor-de-fundo-de-meio-tom-roxo-e-rosa_53876-67278.avif);
+     */
+     background: linear-gradient(to right, #160E28, #2A1A49, #180F2B);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -16,10 +18,8 @@ body {
     justify-content: space-between;
     align-items: center;
     min-height: 60px;
-    /* border-bottom: 1px solid #7B7490; */
+    border-bottom: 1px solid #7B7490;
     width: 95%;
-    /* background: linear-gradient(to right, transparent 49%, #000 49%, transparent 51%); */
-    border-bottom: 0 0 2px solid #000;
 }
 
 .linkHeader a {
