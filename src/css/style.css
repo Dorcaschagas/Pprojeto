@@ -1,7 +1,7 @@
 body {
     /* background-image: url(../img/vetor-de-fundo-de-meio-tom-roxo-e-rosa_53876-67278.avif);
      */
-     background: linear-gradient(to right, #160E28, #2A1A49, #180F2B);
+    background: linear-gradient(to right, #160E28, #2A1A49, #180F2B);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -34,19 +34,9 @@ body {
     justify-content: center !important;
 }
 
-.caixaSelecoes {
-    margin: 0 12%;
-    margin-right: 5px;
-    max-height: 320px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-
-}
-
 .seccoes {
     margin-bottom: 2px;
-    min-width: 260px;
+    /* min-width: 260px; */
     min-height: 50px;
     background-color: #110F23;
     color: #7B7490;
@@ -103,11 +93,11 @@ body {
     position: absolute;
     bottom: 30px;
     right: 30px;
-
 }
 
 .botao,
-.botaoVoltar {
+.botaoVoltar,
+.botaoSeg {
     background-color: lightgrey;
     border-radius: none;
     border: 1px solid #3C1E75;
@@ -117,7 +107,8 @@ body {
 }
 
 .botao:hover,
-.botaoVoltar:hover {
+.botaoVoltar:hover,
+.botaoSeg:hover {
     border: 1px solid white;
     font-weight: 400;
     color: #E6DAFE;
@@ -138,26 +129,6 @@ body {
 .itemCheckboxClicado {
     background-color: #44415E;
     color: #E1D6F9;
-}
-
-@media (max-width: 980px) {
-
-    .container,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container-xl {
-        max-width: 1200px;
-    }
-
-    .seccoes {
-        margin-bottom: 2px;
-        width: calc(74vw) !important;
-    }
-
-    .conteudoDinamico {
-        margin: auto;
-    }
 }
 
 .cursor-not-allowed {

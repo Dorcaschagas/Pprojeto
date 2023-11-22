@@ -9,7 +9,7 @@ $(".itemCheckbox .label").on("click", function () {
   checked = true
 });
 
-$(".botao").click(function () {
+$(".botaoSeg").click(function () {
     if(checked){
         $(".conteudoDinamico").load("terceiro.html");
         $("#segunda").removeClass("itemCheckboxClicado");
@@ -19,10 +19,10 @@ $(".botao").click(function () {
     }
 });
 
-function carregarPaginaVoltar(){
+function carregarPaginaVoltarSeg(){
     $(".conteudoDinamico").load("welcome.html");
     $("#primeira").addClass("itemCheckboxClicado");
     $("#segunda").removeClass("itemCheckboxClicado");
 }
 
-$(".botao").addClass('cursor-not-allowed')
+// $(".botaoSeg").addClass('cursor-not-allowed')
