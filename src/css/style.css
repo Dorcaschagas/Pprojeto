@@ -1,13 +1,19 @@
 body {
-    /* background-image: url(../img/vetor-de-fundo-de-meio-tom-roxo-e-rosa_53876-67278.avif);
-     */
+    
     background: linear-gradient(to right, #160E28, #2A1A49, #180F2B);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+}
+
+#faviconTag{
+    background-color: #110F23;
 }
 
 #corpo {
+    background-image: url(../img/bg-statue.7ed3e705.png);
+    background-position: fixed;
+    background-position: -500px 30px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 100vh;
     padding: 0;
     width: 100%;
@@ -59,7 +65,7 @@ body {
 
 .titulo .h2 {
     color: #E1D6F9;
-    font-size: 1.7em;
+    font-size: 1.8em;
     font-weight: 300;
 }
 
@@ -99,8 +105,7 @@ body {
 .botaoVoltar,
 .botaoSeg {
     background-color: lightgrey;
-    border-radius: none;
-    border: 1px solid #3C1E75;
+    border: 1px solid #E6DAFE;
     padding: 8px 15px;
     color: #3C1E75;
     cursor: not-allowed;
@@ -109,7 +114,7 @@ body {
 .botao:hover,
 .botaoVoltar:hover,
 .botaoSeg:hover {
-    border: 1px solid white;
+    /* border: none; */
     font-weight: 400;
     color: #E6DAFE;
     background-color: #110F23;
@@ -117,13 +122,15 @@ body {
 }
 
 .botaoVoltar {
-    background-color: #110F23;
     color: #E6DAFE;
+    z-index: 1;
+    overflow: hidden;
+    background-color: #110F23;
 }
 
 .botaoVoltar:hover {
-    background-color: lightgrey;
     color: #110F23;
+    background-color: #E6DAFE;
 }
 
 .itemCheckboxClicado {
@@ -137,4 +144,8 @@ body {
 
 span {
     margin-right: 15px;
+}
+
+.flecha{
+    font-size: .6em;
 }
